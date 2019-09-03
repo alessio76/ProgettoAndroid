@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.medcare.home_fragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_home_fragment_to_area_personale_fragment"
+            app:destination="@id/area_personale_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/area_personale_fragment"
+        android:name="com.example.medcare.area_personale_fragment"
+        android:label="fragment_area_personale_fragment"
+        tools:layout="@layout/area_personale_fragment" />
+</navigation>

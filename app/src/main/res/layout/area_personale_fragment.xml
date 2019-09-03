@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".area_personale_fragment">
 
-    <fragment
-        android:id="@+id/fragment2"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/navgraph"
-        tools:layout_editor_absoluteX="308dp"
-        tools:layout_editor_absoluteY="155dp" />
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="60dp" />
 </android.support.constraint.ConstraintLayout>
