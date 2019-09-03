@@ -6,4 +6,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="Orario">Orario</string>
+    <string name="nome">Nome</string>
 </resources>
