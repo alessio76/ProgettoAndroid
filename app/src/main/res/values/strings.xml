@@ -8,4 +8,8 @@
     <string name="password">Password</string>
     <string name="Orario">Orario</string>
     <string name="nome">Nome</string>
+    <string name="NomeDettaglio">Nome:</string>
+    <string name="quantita">Quantità:</string>
+    <string name="quantità">Quantità</string>
+    <string name="principio">Principio Attivo:</string>
 </resources>

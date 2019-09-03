@@ -17,5 +17,14 @@
         android:id="@+id/area_personale_fragment"
         android:name="com.example.medcare.area_personale_fragment"
         android:label="fragment_area_personale_fragment"
-        tools:layout="@layout/area_personale_fragment" />
+        tools:layout="@layout/area_personale_fragment" >
+        <action
+            android:id="@+id/action_area_personale_fragment_to_medicinaFragment"
+            app:destination="@id/medicinaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicinaFragment"
+        android:name="com.example.medcare.MedicinaFragment"
+        android:label="medicina_fragment"
+        tools:layout="@layout/medicina_fragment" />
 </navigation>
