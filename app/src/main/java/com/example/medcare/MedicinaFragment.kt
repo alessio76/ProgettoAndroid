@@ -1,17 +1,17 @@
 package com.example.medcare
 
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.medcare.datamodel.Medicina
 import kotlinx.android.synthetic.main.medicina_fragment.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class MedicinaFragment : Fragment() {
 
     override fun onCreateView(
@@ -26,8 +26,9 @@ class MedicinaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
         // Estraggo la particolare medicina dal bundle ed eventualmente la visualizzo
-        //let prende l'oggetto su cui è invocato come parametro della funzione tra le {} e questo prametro si richiama con it
+        //let prende l'oggetto su cui è invocato come parametro della funzione tra le {} e questo parametro si richiama con it
         arguments?.let {
             val medicina: Medicina? = it.getParcelable("medicina")
             medicina?.let {

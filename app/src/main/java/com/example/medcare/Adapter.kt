@@ -26,12 +26,13 @@ class Adapter(val dataset: ArrayList<Medicina>, val context: Context) : Recycler
         val med = dataset.get(position)
 
         viewHolder.nome.text = med.nome
+        viewHolder.orario.text = med.orario
 
 
         // Imposto il listner per passare a visualizzare il dettaglio
         viewHolder.itemView.setOnClickListener {
 
-            // Creo un bundle e vi inserisco la birra da visualizzare
+            // Creo un bundle e vi inserisco la medicina da visualizzare
             val a = Bundle()
             a.putParcelable("medicina", med)     //TODO: Il nome dell'ogggetto andrebbe inserito in un solo punto!!
             Navigation.findNavController(it).navigate(R.id.action_area_personale_fragment_to_medicinaFragment, a)

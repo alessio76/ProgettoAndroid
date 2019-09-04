@@ -4,4 +4,4 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class Medicina(var nome:String,var quantità:Int, var principio:String) : Parcelable
+data class Medicina(var nome:String,var quantità:Int, var principio:String,var orario:String) : Parcelable

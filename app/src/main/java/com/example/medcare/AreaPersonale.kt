@@ -1,8 +1,11 @@
 package com.example.medcare
 
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
@@ -11,10 +14,7 @@ import androidx.navigation.Navigation
 import com.example.medcare.datamodel.DataBase
 import kotlinx.android.synthetic.main.area_personale_fragment.*
 
-/**
- * A simple [Fragment] subclass.
- */
-class area_personale_fragment : Fragment() {
+class AreaPersonale : Fragment() {
 
     private lateinit var adapter: Adapter
 
@@ -28,7 +28,8 @@ class area_personale_fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        //imposto a rosso il colore dell'ActionBar
+        (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
         // Imposto il layout manager a lineare per avere scrolling in una direzione
         listaMedicine.layoutManager = LinearLayoutManager(activity)
 

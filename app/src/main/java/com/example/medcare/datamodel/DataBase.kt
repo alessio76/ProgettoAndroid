@@ -7,9 +7,10 @@ object DataBase {
 
     // Inizializzatore per popolare il database con qualche dato
     init {
-        medicine.add(Medicina("Tachiflu",  30, "K"))
-        medicine.add(Medicina("Kanrenol",  20, "O"))
-        medicine.add(Medicina("Lasix",  15, "Na"))
+        medicine.add(Medicina("Tachi",20,"K","17:00"))
+        medicine.add(Medicina("Kanrenol",25,"O","15:00"))
+        medicine.add(Medicina("Lasix",10,"Cu","9:00"))
+        medicine.add(Medicina("Zoloft",30,"Ag","23:00"))
 
     }
 
@@ -21,7 +22,7 @@ object DataBase {
     /**
      * Aggiunge una nuova birra nel database
      */
-    fun salvaMed(birra: Medicina) {
-        medicine.add(birra)
+    fun salvaMed(medicina: Medicina) {
+        medicine.add(medicina)
     }
 }

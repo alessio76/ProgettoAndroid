@@ -1,17 +1,17 @@
 package com.example.medcare
 
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.home_fragment.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class home_fragment : Fragment() {
 
     override fun onCreateView(
@@ -25,6 +25,7 @@ class home_fragment : Fragment() {
     //navigo dalla home all'area personale
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
         loginButton.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_home_fragment_to_area_personale_fragment) }
     }
 
