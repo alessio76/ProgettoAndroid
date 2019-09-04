@@ -11,6 +11,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:checked="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/NomeMed" />
 
@@ -26,24 +27,24 @@
 
     <TextView
         android:id="@+id/OrarioMed"
-        android:layout_width="166dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="142dp"
+        android:layout_height="26dp"
         android:hint="@string/Orario"
         app:layout_constraintEnd_toStartOf="@+id/checkBox"
-        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toEndOf="@+id/MedPic"
         app:layout_constraintTop_toBottomOf="@+id/NomeMed" />
 
-    <EditText
+    <TextView
         android:id="@+id/NomeMed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="@string/nome"
         android:inputType="textPersonName"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/MedPic"
         app:layout_constraintTop_toTopOf="parent" />
 

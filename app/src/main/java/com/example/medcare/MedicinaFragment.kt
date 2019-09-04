@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.medcare.datamodel.Medicina
+import kotlinx.android.synthetic.main.medicina_fragment.*
 
 /**
  * A simple [Fragment] subclass.
@@ -24,13 +26,14 @@ class MedicinaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Estraggo il parametro (birra) dal bundle ed eventualmente lo visualizzo
+        // Estraggo la particolare medicina dal bundle ed eventualmente la visualizzo
+        //let prende l'oggetto su cui è invocato come parametro della funzione tra le {} e questo prametro si richiama con it
         arguments?.let {
-            val medicina: Medicina? = it.getParcelable("birra")
+            val medicina: Medicina? = it.getParcelable("medicina")
             medicina?.let {
-                textNome.text = it.nome
-                textProduttore.text = it.produttore
-                textGradazione.text = String.format("%.2f", it.gradazione)
+                nomeDettaglio.text = it.nome
+                quantitàDettaglio.text = it.quantità.toString()
+                principioAttivo.text = it.principio
             }
         }
     }

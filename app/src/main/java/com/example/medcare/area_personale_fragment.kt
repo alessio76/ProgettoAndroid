@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import com.example.medcare.datamodel.DataBase
 import kotlinx.android.synthetic.main.area_personale_fragment.*
 
 /**
@@ -15,7 +16,7 @@ import kotlinx.android.synthetic.main.area_personale_fragment.*
  */
 class area_personale_fragment : Fragment() {
 
-    private lateinit var adapter: MedAdapter
+    private lateinit var adapter: Adapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,13 +33,10 @@ class area_personale_fragment : Fragment() {
         listaMedicine.layoutManager = LinearLayoutManager(activity)
 
         // Associo l'adapter alla RecyclerView
-        adapter = MedAdapter(DataBase.getElencoMed(), requireContext())
+        adapter = Adapter(DataBase.getElencoMed(), requireContext())
         listaMedicine.adapter = adapter
 
-        fabAggiungiMed.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_birreFragment_to_birraEditFragment)
-            adapter.notifyDataSetChanged()  // Aggiorno la lista dopo ogni inserimento
-        }
+
     }
 
 }
