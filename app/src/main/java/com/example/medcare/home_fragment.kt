@@ -27,7 +27,7 @@ class home_fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         //setto l'ActionBar rossa
         (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
-        MedButton.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_home_fragment_to_area_personale_fragment) }
+        PillolaPic.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_home_fragment_to_area_personale_fragment) }
     }
 
 }

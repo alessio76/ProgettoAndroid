@@ -22,7 +22,7 @@
         android:layout_width="163dp"
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="16dp"
         android:text="@string/AggiungiFoto"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,11 +42,23 @@
         tools:text="@string/AggiungiMed" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editText8"
         android:layout_width="92dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/Orario"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText7"
+        app:layout_constraintStart_toEndOf="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/nome"
         android:inputType="textPersonName"
@@ -58,7 +70,7 @@
         android:id="@+id/editText7"
         android:layout_width="92dp"
         android:layout_height="39dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:ems="10"
         android:hint="@string/quantità"
         android:inputType="textPersonName"
@@ -67,27 +79,16 @@
         app:layout_constraintStart_toEndOf="@+id/editText6" />
 
     <EditText
-        android:id="@+id/editText8"
-        android:layout_width="92dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="@string/Orario"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText7"
-        app:layout_constraintStart_toEndOf="@+id/editText7" />
-
-    <EditText
         android:id="@+id/editText9"
         android:layout_width="92dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/PrincipioAttivo"
         android:inputType="textPersonName"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText8"
-        app:layout_constraintStart_toEndOf="@+id/editText8" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
 </android.support.constraint.ConstraintLayout>

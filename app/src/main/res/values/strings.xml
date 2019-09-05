@@ -17,5 +17,10 @@
     <string name="PrincipioAttivo">Principio Attivo</string>
     <string name="AggiungiFoto">Aggiungi una foto</string>
     <string name="AggiungiMed">Aggiungi un medicinale</string>
+    <string name="Benvento">Benvenuto!</string>
+    <string name="Inizio">Vai al piano terapeutico</string>
+    <string name="Elimina">Elimina</string>
+    <string name="Modifica">Modifica</string>
+    <string name="Orario2">Orario:</string>
 
 </resources>

@@ -30,10 +30,8 @@ class AreaPersonale : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         // Imposto il layout manager a lineare per avere scrolling in una direzione
         listaMedicine.layoutManager = LinearLayoutManager(activity)
-
         //setto l'ActionBar rossa
         (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
-
         // Associo l'adapter alla RecyclerView
         adapter = Adapter(DataBase.getElencoMed(), requireContext())
         listaMedicine.adapter = adapter

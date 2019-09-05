@@ -6,18 +6,24 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import com.example.medcare.datamodel.Medicina
 import kotlinx.android.synthetic.main.medicina_fragment.*
 
 class MedicinaFragment : Fragment() {
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        //aggiungo questa riga per disporre il Fragment al menù
+        setHasOptionsMenu(true)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        //aggiungo questa riga per disporre il Fragment al menù
+        setHasOptionsMenu(true)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.medicina_fragment, container, false)
     }
@@ -38,5 +44,11 @@ class MedicinaFragment : Fragment() {
                 principioAttivo.text = it.principio
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?){
+        super.onCreateOptionsMenu(menu, inflater)
+        //menu?.clear()
+        inflater?.inflate(R.menu.menu_modifica, menu) //visualizzo solo la spunta per l'inserimento
     }
 }

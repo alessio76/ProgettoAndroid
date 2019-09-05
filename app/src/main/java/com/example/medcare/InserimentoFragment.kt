@@ -25,7 +25,7 @@ class InserimentoFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?){
         super.onCreateOptionsMenu(menu, inflater)
-        menu?.clear()
+        //menu?.clear()
         inflater?.inflate(R.menu.menu_inserimento, menu) //visualizzo solo la spunta per l'inserimento
     }
 
