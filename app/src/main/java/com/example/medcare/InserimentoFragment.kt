@@ -1,11 +1,8 @@
 package com.example.medcare
 
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
 import android.view.*
 
 
@@ -29,7 +26,7 @@ class InserimentoFragment : Fragment() {
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?){
         super.onCreateOptionsMenu(menu, inflater)
         menu?.clear()
-        inflater?.inflate(R.menu.edit_menu, menu) //visualizzo solo la spunta per l'inserimento
+        inflater?.inflate(R.menu.menu_inserimento, menu) //visualizzo solo la spunta per l'inserimento
     }
 
 

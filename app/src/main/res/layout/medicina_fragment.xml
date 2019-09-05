@@ -23,7 +23,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/quantitàDettaglio"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/principioattivo" />
+        tools:text="@string/PrincipioAttivo" />
 
     <TextView
         android:id="@+id/quantitàDettaglio"
