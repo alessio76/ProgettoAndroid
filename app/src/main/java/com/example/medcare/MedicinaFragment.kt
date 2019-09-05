@@ -25,8 +25,9 @@ class MedicinaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        //setto l'ActionBar rossa
         (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
+
         // Estraggo la particolare medicina dal bundle ed eventualmente la visualizzo
         //let prende l'oggetto su cui è invocato come parametro della funzione tra le {} e questo parametro si richiama con it
         arguments?.let {

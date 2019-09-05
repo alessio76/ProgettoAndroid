@@ -28,16 +28,22 @@ class AreaPersonale : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //imposto a rosso il colore dell'ActionBar
-        (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
         // Imposto il layout manager a lineare per avere scrolling in una direzione
         listaMedicine.layoutManager = LinearLayoutManager(activity)
+
+        //setto l'ActionBar rossa
+        (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
 
         // Associo l'adapter alla RecyclerView
         adapter = Adapter(DataBase.getElencoMed(), requireContext())
         listaMedicine.adapter = adapter
 
-
+        AggiungiMed.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_area_personale_fragment_to_inserimentoFragment)
+            adapter.notifyDataSetChanged()  // Aggiorno la lista dopo ogni inserimento
+        }
     }
+
+
 
 }

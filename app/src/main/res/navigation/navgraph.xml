@@ -22,8 +22,8 @@
             android:id="@+id/action_area_personale_fragment_to_medicinaFragment"
             app:destination="@id/medicinaFragment" />
         <action
-            android:id="@+id/action_area_personale_fragment_to_inserimento"
-            app:destination="@id/inserimento" />
+            android:id="@+id/action_area_personale_fragment_to_inserimentoFragment"
+            app:destination="@id/inserimentoFragment" />
     </fragment>
     <fragment
         android:id="@+id/medicinaFragment"
@@ -31,8 +31,8 @@
         android:label="medicina_fragment"
         tools:layout="@layout/medicina_fragment" />
     <fragment
-        android:id="@+id/inserimento"
-        android:name="com.example.medcare.Inserimento"
+        android:id="@+id/inserimentoFragment"
+        android:name="com.example.medcare.InserimentoFragment"
         android:label="fragment_inserimento"
         tools:layout="@layout/fragment_inserimento" />
 </navigation>

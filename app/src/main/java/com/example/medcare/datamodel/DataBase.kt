@@ -10,7 +10,7 @@ object DataBase {
         medicine.add(Medicina("Tachi",20,"K","17:00"))
         medicine.add(Medicina("Kanrenol",25,"O","15:00"))
         medicine.add(Medicina("Lasix",10,"Cu","9:00"))
-        medicine.add(Medicina("Zoloft",30,"Ag","23:00"))
+
 
     }
 

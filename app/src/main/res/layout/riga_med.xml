@@ -30,6 +30,7 @@
         android:layout_width="142dp"
         android:layout_height="26dp"
         android:hint="@string/Orario"
+        android:inputType="time"
         app:layout_constraintEnd_toStartOf="@+id/checkBox"
         app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toEndOf="@+id/MedPic"

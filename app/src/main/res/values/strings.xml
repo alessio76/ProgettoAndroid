@@ -13,4 +13,6 @@
     <string name="quantità">Quantità</string>
     <string name="principio">Principio Attivo:</string>
     <string name="principioattivo">PrincipioAttivo</string>
+    <string name="conferma">conferma</string>
+    <string name="menuConferma">Conferma</string>
 </resources>

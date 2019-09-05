@@ -8,7 +8,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/principioAttivo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -21,12 +21,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/quantitàDettaglio"
         app:layout_constraintVertical_bias="0.0"
         tools:text="@string/principioattivo" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/quantitàDettaglio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="220dp"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/principio"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/quantita"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -71,7 +71,7 @@
         tools:text="@string/quantita" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/nomeDettaglio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:text="TextView"
+        android:text="@string/NomeDettaglio"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold"

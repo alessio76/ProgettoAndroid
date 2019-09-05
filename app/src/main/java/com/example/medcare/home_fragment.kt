@@ -25,8 +25,9 @@ class home_fragment : Fragment() {
     //navigo dalla home all'area personale
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //setto l'ActionBar rossa
         (activity as AppCompatActivity).supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(255,0,0)))
-        loginButton.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_home_fragment_to_area_personale_fragment) }
+        MedButton.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_home_fragment_to_area_personale_fragment) }
     }
 
 }
